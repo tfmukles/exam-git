@@ -1,7 +1,4 @@
 function myFunction() {
   const a = [1, 2, 3, 4];
-  let sum = 0;
-  for (let i = 0; i < a.length; i++) {
-    sum += a[i];
-  }
+  let sum = a.reduce((a, b) => a + b, 0);
 }
